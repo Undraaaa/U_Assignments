@@ -25,7 +25,7 @@ type(s_grade)
 
 # append
     s_subjects=['Math', 'Data Science', 'Economy']
-    s_grades=[60, 73, 80]
+    s_grades  =[60, 73, 80]
     s_subjects.append(s_grades)
     print(s_subjects)
 
@@ -93,7 +93,7 @@ student3={'Math_PG': 90, 'Math_LG': 'A-', 'DS_PG': 90, 'DS_LG': 'A-', 'Eco_PG': 
     student2['Tot_PG']=statistics.mean([student2['Math_PG'], student2['DS_PG'], student2['Eco_PG']])
     student3['Tot_PG']=statistics.mean([student3['Math_PG'], student3['DS_PG'], student3['Eco_PG']])
 
-    if((student1['Tot_PG']>=60) & (student1['Tot_PG']<65)):
+    if((student1['Tot_PG'] >=60) & (student1['Tot_PG'] <65)):
         student1['Tot_LP']='D-'
     elif((student1['Tot_PG']>=65) & (student1['Tot_PG']<70)):
         student1['Tot_LP']='D+'
@@ -112,7 +112,7 @@ student3={'Math_PG': 90, 'Math_LG': 'A-', 'DS_PG': 90, 'DS_LG': 'A-', 'Eco_PG': 
     else:
         student1['Tot_LP']='F'
 
-    if((student2['Tot_PG']>=60) & (student2['Tot_PG']<65)):
+    if((student2['Tot_PG'] >=60) & (student2['Tot_PG'] <65)):
         student2['Tot_LP']='D-'
     elif((student2['Tot_PG']>=65) & (student2['Tot_PG']<70)):
         student2['Tot_LP']='D+'
@@ -131,7 +131,7 @@ student3={'Math_PG': 90, 'Math_LG': 'A-', 'DS_PG': 90, 'DS_LG': 'A-', 'Eco_PG': 
     else:
         student2['Tot_LP']='F'
 
-    if((student3['Tot_PG']>=60) & (student3['Tot_PG']<65)):
+    if((student3['Tot_PG'] >=60) & (student3['Tot_PG'] <65)):
         student3['Tot_LP']='D-'
     elif((student3['Tot_PG']>=65) & (student3['Tot_PG']<70)):
         student3['Tot_LP']='D+'
