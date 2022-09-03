@@ -5,8 +5,8 @@
 
 ''' Task-1 '''
 import os
-os.getcwd() # get current working directory 
-#os.chdir(r"Aug27_lec3")
+os.getcwd() # get current working directory
+os.chdir(r"Aug27_lec3")
 
 import pandas as pd
 import numpy as np
@@ -26,7 +26,8 @@ df_data = df_data.append(df_data2, ignore_index = True)
 df_data = df_data.append(df_data3, ignore_index = True)
 df_data = df_data.append(df_data4, ignore_index = True)
 print(df_data)
-
+df_expand=df_data
+df_expand.to_excel("3_Data_table/data/data50.xlsx") 
     '''
     for i in range(1,4):
         df_data = df_data.append(df_data{i}, ignore_index = True)
