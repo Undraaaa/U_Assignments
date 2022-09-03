@@ -35,9 +35,19 @@ print(df_data)
 '''
 Q2. Create a '.csv' file with data of only women older than 25 years old
 '''
-
-
+#df_data = pd.read_excel("3_Data_table/data/data.xlsx")
+df_data.info()
+df_data.head()
+df_w25=df_data[(df_data["age"]>25) & (df["gender"] == "F")]
+df_w25.to_csv("../U_Assignments/Section3/Women_25+.csv") 
 
 '''
 Q3. Create a '.json' file with data men under 23 years old
 '''
+#df_data = pd.read_excel("3_Data_table/data/data.xlsx")
+df_data.info()
+df_data.head()
+df_w25=df_data[(df_data["age"]<23) & (df["gender"] == "M")]
+df_w25.to_json("../U_Assignments/Section3/Man_23-.json") 
+
+
